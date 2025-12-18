@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outside Night-Scan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+
+<link rel="icon" href="https://i.postimg.cc/3w5xp0By/9privat-night-minii.png" type="image/png">
+
+</head>
+<body>
+
+    <div class="card">
+        <header>
+            <h1 class="event-name">OUTSIDE NIGHT</h1>
+            <p class="subtitle">CONTRÔLE D'ACCÈS EXCLUSIF</p>
+        </header>
+
+        <div class="search-area">
+            <input type="text" id="ticketInput" placeholder="N° DE TICKET..." autocomplete="off">
+            <button onclick="verifierTicket()">VÉRIFIER LE BILLET</button>
+        </div>
+
+        <div id="resultat" class="hidden">
+            <div id="ticketBadge" class="badge"></div>
+            
+            <div class="photo-container">
+                <img id="clientPhoto" src="" alt="Photo client">
+            </div>
+
+            <div class="details">
+                <div class="field">
+                    <span class="label">NOM DU PARTICIPANT</span>
+                    <span id="clientNom" class="value"></span>
+                </div>
+                <div class="field">
+                    <span class="label">DISTRIBUÉ PAR</span>
+                    <span id="vendeurNom" class="value"></span>
+                </div>
+            </div>
+
+            <div class="access-confirmed">
+                <span class="dot"></span> ACCÈS AUTORISÉ
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
