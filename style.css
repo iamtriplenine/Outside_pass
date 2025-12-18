@@ -1,0 +1,136 @@
+:root {
+    --gold: #d4af37;
+    --red: #ff0000; /* Rouge flash pour le nom */
+    --dark-bg: #050505;
+    --card-bg: #111111;
+    --text-light: #e0e0e0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--dark-bg);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: var(--card-bg);
+    width: 90%;
+    max-width: 420px;
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* TITRE ROUGE GEANT */
+.event-name {
+    font-family: 'Playfair Display', serif;
+    color: var(--red);
+    font-size: 2.8rem;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    color: var(--gold);
+    letter-spacing: 4px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.search-area input {
+    width: 100%;
+    background: #000;
+    border: 1px solid #333;
+    padding: 18px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.search-area input:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+
+.search-area button {
+    width: 100%;
+    padding: 16px;
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-area button:hover {
+    background: var(--gold);
+    color: black;
+}
+
+#resultat {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid #222;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.badge {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+/* Styles des Types */
+.type-PASS-GOLD { background: #fefce810; color: #facc15; border-color: #facc15; box-shadow: 0 0 10px rgba(250, 204, 21, 0.2); }
+.type-PASS-DUO❤️ { background: #fef2f210; color: #ef4444; border-color: #ef4444; }
+.type-STAND { background: #f0fdf410; color: #22c55e; border-color: #22c55e; }
+
+.photo-container img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--gold);
+    margin-bottom: 20px;
+}
+
+.details { text-align: left; }
+.field { margin-bottom: 15px; border-left: 2px solid var(--gold); padding-left: 15px; }
+.label { display: block; font-size: 0.6rem; color: #666; font-weight: 700; }
+.value { display: block; font-size: 1.1rem; font-weight: 400; color: #fff; }
+
+.access-confirmed {
+    color: #22c55e;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot { height: 8px; width: 8px; background: #22c55e; border-radius: 50%; animation: pulse 1s infinite; }
+@keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+
+.hidden { display: none !important; }
