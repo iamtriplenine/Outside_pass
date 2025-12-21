@@ -17,33 +17,36 @@ const listeTickets = {
         vendeur: "𝙏𝙧𝙞𝙥𝙡𝙚 𝙉𝙞𝙣𝙚 𝟗𝟗𝟗", 
         type: "Stand", 
         photo: "https://i.postimg.cc/9FKFFbBV/e5b00351-90e0-45a7-a91d-5ad4a43655ea.jpg" 
-    }
-    // Pour ajouter le suivant, mettez une virgule après l'accolade } et recommencez.
+    },
 
 
 
 
 
-
-"516273": { 
+ "516273": { 
         nom: "Silvan ", 
-        vendeur: "Songn", 
-        type: "Perso", 
-        photo: "https://i.postimg.cc/c4nZJqDB/Whats-App-Image-2025-12-21-at-5-51-56-PM.jpg" 
-    }
+        vendeur: "𝙏𝙧𝙞𝙥𝙡𝙚 𝙉𝙞𝙣𝙚 𝟗𝟗𝟗", 
+        type: "PERSO", 
+        photo: "https://i.postimg.cc/yY8KFgYc/bfd9bf1c_a396_4486_ad3b_e668ea5510d8.jpg" 
+    },
 
 
-"293847": { 
+
+
+
+    "293847": { 
         nom: "Staline ", 
-        vendeur: "yop", 
-        type: "Perso", 
-        photo: "https://i.postimg.cc/Dz28sfHh/Whats-App-Image-2025-12-21-at-6-48-06-PM.jpg" 
+        vendeur: "Kinvn", 
+        type: "PERSO", 
+        photo: "https://i.postimg.cc/153Spn5n/c264c1ba_81b3_4e4d_9c76_6612f4cbd35f.jpg" 
     }
 
 
 
 
-    
+
+
+    // Pour ajouter le suivant, mettez une virgule après l'accolade } et recommencez.
 };
 
 
