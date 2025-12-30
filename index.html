@@ -1,54 +1,269 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outside Night-Scan</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outside Night – Scan</title>
 
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 <link rel="icon" href="https://i.postimg.cc/3w5xp0By/9privat-night-minii.png" type="image/png">
 
+<style>
+:root{
+    --gold:#d4af37;
+    --red:#ff0000;
+    --dark:#050505;
+    --card:#111;
+    --text:#e0e0e0;
+    --green:#22c55e;
+}
+
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:radial-gradient(circle at top,#111,#000);
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+}
+
+.card{
+    width:90%;
+    max-width:420px;
+    background:var(--card);
+    padding:40px 30px;
+    border-radius:18px;
+    border:1px solid #222;
+    box-shadow:0 0 60px rgba(255,0,0,.15);
+    animation:slideUp .6s ease;
+    text-align:center;
+}
+
+@keyframes slideUp{
+    from{opacity:0;transform:translateY(30px)}
+    to{opacity:1;transform:none}
+}
+
+.event-name{
+    font-family:'Playfair Display',serif;
+    color:var(--red);
+    font-size:2.8rem;
+    margin:0;
+    text-shadow:0 0 15px rgba(255,0,0,.4);
+}
+
+.subtitle{
+    margin:10px 0 30px;
+    font-size:.75rem;
+    letter-spacing:4px;
+    color:var(--gold);
+}
+
+.search-area input{
+    width:100%;
+    padding:18px;
+    background:#000;
+    border:1px solid #333;
+    border-radius:10px;
+    color:#fff;
+    font-size:1.1rem;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.search-area input:focus{
+    outline:none;
+    border-color:var(--gold);
+}
+
+.search-area button{
+    width:100%;
+    padding:16px;
+    border-radius:10px;
+    background:transparent;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-area button:hover{
+    background:var(--gold);
+    color:#000;
+}
+
+#error{
+    margin-top:15px;
+    color:#ef4444;
+    font-size:.9rem;
+    display:none;
+}
+
+#resultat{
+    margin-top:35px;
+    padding-top:30px;
+    border-top:1px solid #222;
+    animation:fade .4s ease;
+}
+
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+.badge{
+    display:inline-block;
+    padding:6px 22px;
+    border-radius:50px;
+    font-size:.7rem;
+    font-weight:800;
+    margin-bottom:20px;
+    border:1px solid;
+}
+
+.type-PASS-GOLD{color:#facc15;border-color:#facc15;box-shadow:0 0 12px rgba(250,204,21,.3)}
+.type-PASS-DUO❤️{color:#ef4444;border-color:#ef4444}
+.type-STAND{color:#22c55e;border-color:#22c55e}
+.type-PERSO,.type-PERSO-RESERVE{color:#22c55e;border-color:#22c55e}
+
+.photo-container img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid var(--gold);
+    margin-bottom:20px;
+}
+
+.details{text-align:left}
+.field{
+    margin-bottom:15px;
+    border-left:2px solid var(--gold);
+    padding-left:15px;
+}
+.label{font-size:.6rem;color:#666;font-weight:700}
+.value{font-size:1.1rem}
+
+.access-confirmed{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    color:var(--green);
+    font-weight:800;
+}
+
+.dot{
+    width:8px;height:8px;
+    background:var(--green);
+    border-radius:50%;
+    animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+    0%{opacity:1}
+    50%{opacity:.3}
+    100%{opacity:1}
+}
+
+.hidden{display:none}
+</style>
 </head>
+
 <body>
 
-    <div class="card">
-        <header>
-            <h1 class="event-name">OUTSIDE NIGHT</h1>
-            <p class="subtitle">CONTRÔLE D'ACCÈS EXCLUSIF</p>
-        </header>
+<div class="card">
+    <h1 class="event-name">OUTSIDE NIGHT</h1>
+    <p class="subtitle">CONTRÔLE D'ACCÈS EXCLUSIF</p>
 
-        <div class="search-area">
-            <input type="text" id="ticketInput" placeholder="N° DE TICKET..." autocomplete="off">
-            <button onclick="verifierTicket()">VÉRIFIER LE BILLET</button>
-        </div>
-
-        <div id="resultat" class="hidden">
-            <div id="ticketBadge" class="badge"></div>
-            
-            <div class="photo-container">
-                <img id="clientPhoto" src="" alt="Photo client">
-            </div>
-
-            <div class="details">
-                <div class="field">
-                    <span class="label">NOM DU PARTICIPANT</span>
-                    <span id="clientNom" class="value"></span>
-                </div>
-                <div class="field">
-                    <span class="label">DISTRIBUÉ PAR</span>
-                    <span id="vendeurNom" class="value"></span>
-                </div>
-            </div>
-
-            <div class="access-confirmed">
-                <span class="dot"></span> ACCÈS AUTORISÉ
-            </div>
-        </div>
+    <div class="search-area">
+        <input id="ticketInput" placeholder="N° DE TICKET…" autocomplete="off">
+        <button onclick="verifierTicket()">VÉRIFIER LE BILLET</button>
     </div>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <div id="error">⚠️ Ticket invalide ou inexistant</div>
+
+    <div id="resultat" class="hidden">
+        <div id="ticketBadge" class="badge"></div>
+
+        <div class="photo-container">
+            <img id="clientPhoto">
+        </div>
+
+        <div class="details">
+            <div class="field">
+                <span class="label">NOM DU PARTICIPANT</span>
+                <span id="clientNom" class="value"></span>
+            </div>
+            <div class="field">
+                <span class="label">DISTRIBUÉ PAR</span>
+                <span id="vendeurNom" class="value"></span>
+            </div>
+        </div>
+
+        <div class="access-confirmed">
+            <span class="dot"></span> ACCÈS AUTORISÉ
+        </div>
+    </div>
+</div>
+
+<script>
+const listeTickets={
+"999":{nom:"𝙏𝙧𝙞𝙥𝙡𝙚 𝙉𝙞𝙣𝙚 𝟗𝟗𝟗",vendeur:"Me",type:"PASS GOLD",photo:"https://i.postimg.cc/jq1NCnR0/IMG-0915.jpg"},
+
+
+
+
+
+"448576":{nom:"Kerchak",vendeur:"kinvn",type:"PERSO",photo:"https://i.postimg.cc/pLDf2JVB/845082b5-b7de-4ab5-8c29-1c6c6fa15fa8.jpg"},
+
+
+
+
+
+
+
+
+"482901":{nom:"Amynoush",vendeur:"𝙏𝙧𝙞𝙥𝙡𝙚 𝙉𝙞𝙣𝙚 𝟗𝟗𝟗",type:"PASS DUO❤️",photo:"https://i.postimg.cc/XqML68Kx/82b86663-5acb-42c6-8ce2-d139af07d910.jpg"},
+"774920":{nom:"Joseph Amani",vendeur:"𝙏𝙧𝙞𝙥𝙡𝙚 𝙉𝙞𝙣𝙚 𝟗𝟗𝟗",type:"STAND",photo:"https://i.postimg.cc/9FKFFbBV/e5b00351-90e0-45a7-a91d-5ad4a43655ea.jpg"},
+"516273":{nom:"Silvan",vendeur:"𝙏𝙧𝙞𝙥𝙡𝙚 𝙉𝙞𝙣𝙚 𝟗𝟗𝟗",type:"PERSO",photo:"https://i.postimg.cc/yY8KFgYc/bfd9bf1c_a396_4486_ad3b_e668ea5510d8.jpg"},
+"293847":{nom:"Staline",vendeur:"Kinvn",type:"PERSO",photo:"https://i.postimg.cc/153Spn5n/c264c1ba_81b3_4e4d_9c76_6612f4cbd35f.jpg"},
+"224859":{nom:"Madoman",vendeur:"Laski",type:"PERSO-RESERVE",photo:"https://i.postimg.cc/jdy8zc2C/f6e8dd7b-0661-4760-95fe-fccabe4bd13f.jpg"}
+};
+
+function verifierTicket(){
+    const input=document.getElementById("ticketInput");
+    const num=input.value.trim();
+    const res=document.getElementById("resultat");
+    const err=document.getElementById("error");
+    const badge=document.getElementById("ticketBadge");
+
+    res.classList.add("hidden");
+    err.style.display="none";
+
+    const client=listeTickets[num];
+    if(!client){
+        err.style.display="block";
+        input.value="";
+        return;
+    }
+
+    clientNom.textContent=client.nom;
+    vendeurNom.textContent=client.vendeur;
+    clientPhoto.src=client.photo;
+    badge.textContent=client.type;
+    badge.className="badge type-"+client.type.toUpperCase().replace(/\s+/g,"-");
+
+    setTimeout(()=>res.classList.remove("hidden"),50);
+}
+
+document.getElementById("ticketInput").addEventListener("keydown",e=>{
+    if(e.key==="Enter") verifierTicket();
+});
+</script>
+
 </body>
 </html>
