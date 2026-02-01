@@ -108,3 +108,26 @@ backBtn.onclick = () => {
   ticketInput.value = "";
   barFill.style.width = "0%"; // Reset animation bar
 };
+
+
+
+
+/* ============================================================
+   AUTO-REMPLISSAGE VIA URL (QR CODE)
+   Exemple: sites.com/pass.html?ticket=999
+   ============================================================ */
+
+window.onload = () => {
+  // 1. On récupère les paramètres après le "?" dans l'URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const ticketParURL = urlParams.get('ticket'); // cherche "ticket="
+
+  if (ticketParURL) {
+    // 2. On remplit la barre de recherche
+    ticketInput.value = ticketParURL;
+
+    // 3. Optionnel : On peut même lancer la vérification 
+    // automatiquement pour qu'il n'ait même pas à appuyer
+    verifyBtn.click(); 
+  }
+};
