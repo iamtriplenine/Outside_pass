@@ -5,12 +5,14 @@
 const tickets = {
   "999": {
     nom: "Triple Nine",
-    type: "PASS GOLD",
+    type: "PASS STANDARD",
     photo: "https://i.postimg.cc/jq1NCnR0/IMG-0915.jpg",
     paye: 10000,
-    total: 20000,
+    total: 10000,
     adresse: "Abidjan, Cocody, Cité des Arts"
   },
+
+
   "888": {
     nom: "Marc Antoine",
     type: "PASS VIP",
@@ -18,7 +20,32 @@ const tickets = {
     paye: 25000,
     total: 25000,
     adresse: "Cotonou, Quartier Haie Vive"
-  }
+  },
+
+"837492": {
+    nom: "Trey",
+    type: "PASS STANDARD",
+    photo: "https://i.postimg.cc/52Zr3CPN/0d7e72d9_ec9b_4fa8_b8e9_192ee404895b.jpg",
+    paye: 10000,
+    total: 10000,
+    adresse: ""
+  },
+
+
+"837492": {
+    nom: "Esdras",
+    type: "PASS STANDARD",
+    photo: "https://i.postimg.cc/HkfN2ySn/db14184e_9a72_41d0_947b_fa47cc87d171.jpg",
+    paye: 7000,
+    total: 7000,
+    adresse: ""
+  },
+
+
+
+
+
+
 };
 
 /* ============================================================
