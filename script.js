@@ -46,7 +46,7 @@ const tickets = {
     nom: "LEGOATMADARA666",
     type: "PASS STANDARD",
     photo: "https://i.postimg.cc/gkJZ4pHB/0726c343-3165-4d78-a555-8b9b35038ea8.jpg",
-    paye: 6000,
+    paye: 8000,
     total: 10000,
     adresse: ""
   },
