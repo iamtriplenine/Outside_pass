@@ -6,7 +6,7 @@ const tickets = {
   "999": {
     nom: "Triple Nine",
     type: "PASS STANDARD",
-    photo: "https://i.postimg.cc/6pSKMxFQ/IMG_9106.jpg",
+    photo: "https://i.postimg.cc/1tGjwBwp/IMG_2160.jpg",
     paye: 10000,
     total: 10000,
     adresse: "Abidjan, Cocody, Cité des Arts"
@@ -48,6 +48,15 @@ const tickets = {
     photo: "https://i.postimg.cc/gkJZ4pHB/0726c343-3165-4d78-a555-8b9b35038ea8.jpg",
     paye: 8000,
     total: 10000,
+    adresse: ""
+  },
+
+  "482917": {
+    nom: "Precieuse",
+    type: "PASS STANDARD",
+    photo: "https://i.postimg.cc/vZfK1d3D/f4767565_f024_45a0_bc65_6376ff569e69.jpg",
+    paye: 7000,
+    total: 7000,
     adresse: ""
   },
 
@@ -165,3 +174,8 @@ window.onload = () => {
     verifyBtn.click(); 
   }
 };
+
+
+ticketInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") verifyBtn.click();
+});
