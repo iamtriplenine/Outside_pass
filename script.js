@@ -5,8 +5,8 @@
 const tickets = {
   "999": {
     nom: "Triple Nine",
-    type: "PASS STANDARD",
-    photo: "https://i.postimg.cc/1tGjwBwp/IMG_2160.jpg",
+    type: "STAFF",
+    photo: "https://i.postimg.cc/wx2dwhBV/IMG_3106.jpg",
     paye: 10000,
     total: 10000,
     adresse: "Abidjan, Cocody, Cité des Arts"
