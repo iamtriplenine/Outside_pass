@@ -61,6 +61,16 @@ const tickets = {
   },
 
 
+   "730164": {
+    nom: "xxxxxx",
+    type: "PASS STANDARD",
+    photo: "https://i.postimg.cc/sXMvw60m/20a3af58-e303-499a-b05e-76169d91d380.jpg",
+    paye: 2000,
+    total: 10000,
+    adresse: ""
+  },
+
+
 
 };
 
