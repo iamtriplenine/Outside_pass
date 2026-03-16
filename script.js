@@ -24,10 +24,10 @@ const tickets = {
 
 "104758": {
     nom: "Trey",
-    type: "PASS STANDARD",
+    type: "VIP",
     photo: "https://i.postimg.cc/52Zr3CPN/0d7e72d9_ec9b_4fa8_b8e9_192ee404895b.jpg",
-    paye: 10000,
-    total: 10000,
+    paye: 50000,
+    total: 50000,
     adresse: ""
   },
 
