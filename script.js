@@ -71,6 +71,26 @@ const tickets = {
   },
 
 
+    "918450": {
+    nom: "Junior",
+    type: "PASS STANDARD",
+    photo: "https://i.postimg.cc/W4Vpz2M0/cb1c2564_7d5b_4a73_8c43_34627d3171c3.jpg",
+    paye: 2000,
+    total: 10000,
+    adresse: ""
+  },
+
+
+
+   "256839": {
+    nom: "Ibrahim",
+    type: "PASS STANDARD",
+    photo: "https://i.postimg.cc/q7rBqk8n/7094c118_e5c1_416e_83ff_67fba0ad0f21.jpg",
+    paye: 2000,
+    total: 10000,
+    adresse: ""
+  },
+
 
 };
 
