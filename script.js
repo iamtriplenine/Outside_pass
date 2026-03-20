@@ -65,7 +65,7 @@ const tickets = {
     nom: "xxxxxx",
     type: "PASS STANDARD",
     photo: "https://i.postimg.cc/sXMvw60m/20a3af58-e303-499a-b05e-76169d91d380.jpg",
-    paye: 2000,
+    paye: 7000,
     total: 10000,
     adresse: ""
   },
@@ -107,6 +107,15 @@ const tickets = {
     type: "bénévole",
     photo: "https://i.postimg.cc/6Q53tV62/b45a68ec_8459_487e_93e8_cebc0b649f9f.jpg",
     paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
+   "143795": {
+    nom: "Alex CDG",
+    type: "bénévole",
+    photo: "https://i.postimg.cc/KYzHK55x/5c03474f_513c_4fab_8bda_5b59b36bb9ec.jpg",
+    paye: 3000,
     total: 5000,
     adresse: ""
   },
