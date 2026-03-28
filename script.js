@@ -121,6 +121,26 @@ const tickets = {
   },
 
 
+       "602487": {
+    nom: "Serena",
+    type: "bénévole",
+    photo: "https://i.postimg.cc/v85wcp77/7ef2b291_0719_4743_8f3e_59f67f94ea7f.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
+
+   "785104": {
+    nom: "Ocean Grace",
+    type: "Pass standard",
+    photo: "https://i.postimg.cc/pVKMpgQf/787e879e_cc43_46df_98b1_6ff9bed55162.jpg",
+    paye: 2000,
+    total: 10000,
+    adresse: ""
+  },
+
+
 
 };
 
