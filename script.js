@@ -142,6 +142,38 @@ const tickets = {
 
 
 
+   "468215": {
+    nom: "Emmanuel",
+    type: "Pass standard",
+    photo: "https://i.postimg.cc/T3g1R5Z1/56c8ddf4_9ea7_4c18_aa88_d6ff4363c574.jpg",
+    paye: 2000,
+    total: 10000,
+    adresse: ""
+  },
+
+
+   "921573": {
+    nom: "Beauté tactile",
+    type: "Pass standard",
+    photo: "https://i.postimg.cc/YCY0pLJj/3221fb73_8c1e_41e4_8232_709760cb015f.jpg",
+    paye: 2000,
+    total: 7000,
+    adresse: ""
+  },
+
+
+   "349860": {
+    nom: "Nutella",
+    type: "Pass standard",
+    photo: "https://i.postimg.cc/RZKhMJjF/9125bfd5_90f6_4bc1_b9b4_de12c45d2da7.jpg",
+    paye: 2000,
+    total: 7000,
+    adresse: ""
+  },
+
+
+
+
 };
 
 /* ============================================================
