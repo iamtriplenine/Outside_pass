@@ -65,7 +65,7 @@ const tickets = {
     nom: "xxxxxx",
     type: "PASS STANDARD",
     photo: "https://i.postimg.cc/sXMvw60m/20a3af58-e303-499a-b05e-76169d91d380.jpg",
-    paye: 7000,
+    paye: 10000,
     total: 10000,
     adresse: ""
   },
@@ -91,14 +91,7 @@ const tickets = {
     adresse: ""
   },
 
-   "574028": {
-    nom: "DYLAN",
-    type: "PASS STANDARD",
-    photo: "https://i.postimg.cc/1X6RJJBW/9774b065_be7f_4551_9571_5995df26a457.jpg",
-    paye: 2000,
-    total: 10000,
-    adresse: ""
-  },
+   
 
 
    
@@ -115,7 +108,7 @@ const tickets = {
     nom: "Alex CDG",
     type: "bénévole",
     photo: "https://i.postimg.cc/KYzHK55x/5c03474f_513c_4fab_8bda_5b59b36bb9ec.jpg",
-    paye: 3000,
+    paye: 5000,
     total: 5000,
     adresse: ""
   },
@@ -172,6 +165,23 @@ const tickets = {
   },
 
 
+   "507894": {
+    nom: "Maelys",
+    type: "Bénévole",
+    photo: "https://i.postimg.cc/L4yJKLG1/7ca799dd_d052_4c2c_99f4_463344b017cb.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
+"803612": {
+    nom: "Stan Ogochumaru",
+    type: "bénévole",
+    photo: "https://i.postimg.cc/xjsXDMBb/5bfa43cb_58ac_4a46_b379_82234902201f.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
 
 
 };
