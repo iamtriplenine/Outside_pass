@@ -184,6 +184,17 @@ const tickets = {
   },
 
 
+   
+"831046": {
+    nom: "Madoché",
+    type: "pass Promo",
+    photo: "https://i.postimg.cc/sDmCdd4H/f8361733_b103_4e76_9553_e376cab9e66a.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
+
 };
 
 /* ============================================================
