@@ -139,7 +139,7 @@ const tickets = {
     nom: "Emmanuel",
     type: "Pass standard",
     photo: "https://i.postimg.cc/T3g1R5Z1/56c8ddf4_9ea7_4c18_aa88_d6ff4363c574.jpg",
-    paye: 2000,
+    paye: 10000,
     total: 10000,
     adresse: ""
   },
@@ -149,7 +149,7 @@ const tickets = {
     nom: "Beauté tactile",
     type: "Pass standard",
     photo: "https://i.postimg.cc/YCY0pLJj/3221fb73_8c1e_41e4_8232_709760cb015f.jpg",
-    paye: 2000,
+    paye: 7000,
     total: 7000,
     adresse: ""
   },
@@ -159,7 +159,7 @@ const tickets = {
     nom: "Nutella",
     type: "Pass standard",
     photo: "https://i.postimg.cc/RZKhMJjF/9125bfd5_90f6_4bc1_b9b4_de12c45d2da7.jpg",
-    paye: 2000,
+    paye: 7000,
     total: 7000,
     adresse: ""
   },
@@ -189,6 +189,27 @@ const tickets = {
     nom: "Madoché",
     type: "pass Promo",
     photo: "https://i.postimg.cc/sDmCdd4H/f8361733_b103_4e76_9553_e376cab9e66a.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
+
+   "185649": {
+    nom: "Mickael",
+    type: "bénévole",
+    photo: "https://i.postimg.cc/PqvpNcZy/93a7f853_29bc_449e_bdac_42c556edf650.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
+
+
+   "760913": {
+    nom: "Amynoush",
+    type: "bénévole",
+    photo: "https://i.postimg.cc/hGQzhwx0/b45888e8_222e_491b_8519_d853b55badd8.jpg",
     paye: 5000,
     total: 5000,
     adresse: ""
