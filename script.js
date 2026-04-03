@@ -216,6 +216,27 @@ const tickets = {
   },
 
 
+
+   "943072": {
+    nom: "Ley",
+    type: "pass Promo",
+    photo: "https://i.postimg.cc/TYtQhR3j/69636c22_7688_4857_86ff_b4192e0358bb.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
+
+
+   "618530": {
+    nom: "Hermine",
+    type: "pass Promo",
+    photo: "https://i.postimg.cc/sDTK1Vgp/a2fcbb5c_d0fe_4a94_bc72_345f819eb2a3.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
 };
 
 /* ============================================================
