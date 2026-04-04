@@ -241,10 +241,22 @@ const tickets = {
 
    "402796": {
     nom: "Olive",
-    type: "pass Promo",
+    type: "pass Standard",
     photo: "https://i.postimg.cc/QNcSm5kS/5104dba1-28a1-4ba8-9bee-b727bab89c6d.jpg",
     paye: 7000,
     total: 7000,
+    adresse: ""
+  },
+
+
+
+
+   "759284": {
+    nom: "VINCENT",
+    type: "pass Standard",
+    photo: "https://i.postimg.cc/8PF7S8t5/b6c37992_23c3_424d_9301_47f2df0bfae2.jpg",
+    paye: 10000,
+    total: 10000,
     adresse: ""
   },
 
