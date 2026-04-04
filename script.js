@@ -282,6 +282,16 @@ const tickets = {
     adresse: ""
   },
 
+
+   "970246": {
+    nom: "Staniel",
+    type: "pass Promo",
+    photo: "https://i.postimg.cc/R0FScyqW/dc4f22e4_50d8_4595_985e_25867acc08f3.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
 };
 
 /* ============================================================
