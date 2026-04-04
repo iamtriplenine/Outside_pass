@@ -260,6 +260,28 @@ const tickets = {
     adresse: ""
   },
 
+
+
+   "136980": {
+    nom: "Diamant noir",
+    type: "pass Promo",
+    photo: "https://i.postimg.cc/5tWphWdh/d490d1f1_221d_4c5e_965f_e5e13de2ce8a.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
+
+
+   "584372": {
+    nom: "Joyce",
+    type: "pass Promo",
+    photo: "https://i.postimg.cc/8Cgw2ggQ/6a8e57e8_5846_45c6_b9ff_d286c4182568.jpg",
+    paye: 5000,
+    total: 5000,
+    adresse: ""
+  },
+
 };
 
 /* ============================================================
